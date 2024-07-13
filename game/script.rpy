@@ -2,33 +2,127 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-# $ Zeil = Character('Zeil', color="#E03B8B")
-default Zeil = Character('Zeil', color="#E03B8B")       
+# $ Thomas = Character('Zeil', color="#E03B8B")
+default Thomas = Character('Thomas', color="#E03B8B")
+default Protagonist = Character('Protagonist', color="#E03B8B")         
 # The game starts here.
 
 label start:
-    "During a video tutorial..."
-    "Zeil" "Hi! This is Zeil."
-    "Zeil" "I started \"Zeil Learnings\" recently to share my game-making knowledge."
+    "Protagonist" "Omigod! I have a date with a hottie and I'm so nervous!!! I gotta make sure I say the right things!"
+    "Protagonist" "aaa so scared do i run or goooo"
 
-label sprites:
-    "Zeil"  "But wait, where are you?"
-    show zeil delighted
-    "Zeil"  "Oh!"
-    show zeil angry
-    "Zeil" "It's not like I was looking for you or anything."
-    show extra normal at right
-    "Random Girl" "Tsundere..."
-    hide extra
-    "Zeil" "..."
+    menu:
+        "No running away":
+            jump goodpath1
 
-label background:
-    Zeil "Come on! Let's go the gym."
-    scene bg gym
-    with fade
+        "Run away":
+            jump badpath1
     
-    show zeil smile2 at left
-    Zeil "You got here faster than I did!"  
+    label badpath1:
+        "lol you die"
+        return
+
+    label goodpath1:
+        "The protagonist makes their way to (Date Area) and finally meets their date"
+
+    label background:
+        scene bg restaurant
+        with fade
+        show man left at left as man1
+        show man right at right as man2
+        "Thomas"  "Bla Bla."
+        "Protagonist"  "Bla bla."
+        
+    menu:
+        "Call waiter over":
+            jump goodpath2
+            
+        "Continue waiting":
+            jump badpath2
+         
+    label badpath2:
+        "lol your date leaves you"
+        return
+
+    label goodpath2:
+        "Thomas"  "Bla Bla."
+        "Protagonist"  "Bla bla."
+    
+    menu:
+        "Laura Baptie Special, Hannah Wiser Toolkit, Foot Fungus":
+            jump badpath3
+            
+        "Hannah Wiser Toolkit, Foot Fungus, Laura Baptie Special":
+            jump badpath3
+        
+        "Foot Fungus, Hannah Wiser Toolkit, Laura Baptie Special":
+            jump goodpath3
+
+    label badpath3:
+        "lol your date dies"
+        return
+    
+    label goodpath3:
+        "Thomas"  "Bla Bla."
+        "Protagonist"  "Bla bla."
+
+    menu:
+        "Comment negatively on mustard":
+            jump badpath4
+            
+        "Comment positively on mustard":
+            jump goodpath4
+
+    label badpath4:
+        "lol your date kills you"
+        return
+
+    label goodpath4:
+        "Thomas"  "Bla Bla."
+        "Protagonist"  "Bla bla."
+        
+    menu: 
+        "Shame him for being weird with the salt!":
+            jump badpath5
+        
+        "Don't shame him!!! He is doing his best!":
+            jump goodpath5
+
+    label badpath5:
+        "lol your date leaves you"
+        return
+
+    label goodpath5:
+        "Thomas"  "Bla Bla."
+        "Protagonist"  "Bla bla."
+        
+    menu:
+        "Split Bill":
+            jump goodpath6
+        
+        "Pay the bill yourself":
+            jump badpath6
+        
+        "Make him pay":
+            jump badpath7
+
+    label badpath6:
+        "lol your date leaves you"
+        return
+
+    label badpath7:
+        "lol mafia kills you"
+        return
+
+    label goodpath6:
+        "You win!"
+        return
+
+
+
+        
+            
+
 
 label bgm:
     play music "audio/bgm_basketball.mp3" fadein 1.0 volume 0.5
@@ -48,7 +142,7 @@ menu:
         jump choices1_a
     "...":
         jump choices1_b
-        
+
 label choices1_a:
     Zeil "Good!"
     $ learned = True
