@@ -101,10 +101,10 @@ label start:
             jump goodpath6
         
         "Pay the bill yourself":
-            jump badpath6
+            jump badpath7
         
         "Make him pay":
-            jump badpath7
+            jump badpath6
 
     label badpath6:
         "lol your date leaves you"
