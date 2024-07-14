@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 105: show statement expects a non-empty block.
-    show thomas allergy at center:
-                                  ^
+File "game/screens.rpy", line 294: keyword argument 'xalign' is incompatible with 'xpos'.
+    xalign 0.5
+          ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sun Jul 14 10:15:52 2024
+Sun Jul 14 13:19:16 2024

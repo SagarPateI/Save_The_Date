@@ -290,8 +290,8 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        xalign 0.5  # Center horizontally
+        yalign 0.8  # Move closer to the bottom, adjust as needed
 
         spacing gui.navigation_spacing
 
@@ -402,7 +402,6 @@ style main_menu_title:
 
 style main_menu_version:
     properties gui.text_properties("version")
-
 
 ## Game Menu screen ############################################################
 ##
