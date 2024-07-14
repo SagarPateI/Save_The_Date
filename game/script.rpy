@@ -33,9 +33,9 @@ label start:
             jump badpath1
     
     label badpath1:
-        "Jake" "Well, I could say the wrong thing… or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GOD I CAN’T DO THIIISSSS!!!!"
-        "(Jake’s anxiety builds up, listing out various worries.)"
-        "Jake" "I... I just can’t do this… I’m sorry!"
+        "Jake" "Well, I could say the wrong thing... or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GOD I CAN’T DO THIIISSSS!!!!"
+        "Narrator" "(Jake’s anxiety builds up, listing out various worries.)"
+        "Jake" "I... I just can’t do this... I’m sorry!"
         return
 
     label goodpath1:
@@ -66,7 +66,7 @@ label start:
         "Narrator" "(Your date taps you on your shoulder!)"
         "Jake" "WAHH!? Where did yo- how?"
         show thomas happy
-        "Thomas" "Hi (said in a way that only a godlike sexdonis like him can say~)"
+        "Thomas" "Hi. (said in a way that only a godlike sexdonis like him can say~)"
         "Jake" "(Quick, say something a CS major could find funny!)"
         "Jake" "How do Linux users greet each other? Hello, Wor–"
         "Thomas" "I’d just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling 
@@ -77,7 +77,7 @@ useful by the GNU corelibs, shell utilities and vital system components
 comprising a full OS as defined by POSIX."
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
         "Jake" "(Smooth, Jake... Real smooth.)"
-        "Narrator" "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the mometnts just fly by, however..."
+        "Narrator" "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the moments just fly by, however..."
         "Jake" "(It’s been hours and the waiter still has not visited our table! What should I do?!)"
 
     menu:
@@ -88,10 +88,12 @@ comprising a full OS as defined by POSIX."
             jump badpath3
     
     label badpath3:
-        "Jake" "Erm… I guess I’m just too shy to call the waiter over! uwu"
+        "Jake" "Erm... I guess I’m just too shy to call the waiter over! uwu"
         hide thomas happy
         show thomas dead
         "Thomas" "(Throws up and dies of cringe!)"
+        "Narrator" "And thus Thomas passes away. The date is over!"
+        return
     
     label goodpath3:
         "Jake" "Oh waiter!!!"
@@ -103,7 +105,7 @@ comprising a full OS as defined by POSIX."
     menu:
         "Let’s order spaghetti with extra penicillin!":
             jump badpath4
-        "We’ll order burgers at this fine Itallian establishment!":
+        "We’ll order burgers at this fine Italian establishment!":
             jump goodpath4
     
     label badpath4:
@@ -141,7 +143,7 @@ comprising a full OS as defined by POSIX."
         "Jake" "Though, I have a question... Why did you put mustard on your burger?"
         show thomas neutral
         "Thomas" "I just think mustard is the greatest condiment in the world."
-        "Thomas" "It is yellow which implies that you must have great caution when partaking in its delicious compared to the redness of ketchup!"
+        "Thomas" "It is yellow which implies that you must have great caution when partaking in its deliciousness compared to the redness of ketchup!"
         hide thomas neutral 
         show thomas upset
         "Thomas" "What, do you take issue with mustard?"
