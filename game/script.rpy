@@ -33,9 +33,9 @@ label start:
             jump badpath1
     
     label badpath1:
-        "Jake" "Well, I could say the wrong thing... or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GHOD I CNA’T DO THIIISSSS!!!!"
+        "Jake" "Well, I could say the wrong thing… or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GHOD I CNA’T DO THIIISSSS!!!!"
         "(Jake’s anxiety builds up, listing out various worries.)"
-        "Jake" "I... I just can’t do this... I’m sorry!"
+        "Jake" "I… I just can’t do this… I’m sorry!"
         return
 
     label goodpath1:
@@ -77,7 +77,7 @@ useful by the GNU corelibs, shell utilities and vital system components
 comprising a full OS as defined by POSIX."
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
         "Jake" "(Smooth, Jake... Real smooth.)"
-        "Narrator""Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the mometnts just fly by, however..."
+        "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the mometnts just fly by, however..."
         "Jake" "(It’s been hours and the waiter still has not visited our table! What should I do?!)"
 
     menu:
@@ -92,7 +92,6 @@ comprising a full OS as defined by POSIX."
         hide thomas happy
         show thomas dead
         "Thomas" "(Throws up and dies of cringe!)"
-        return
     
     label goodpath3:
         "Jake" "Oh waiter!!!"
@@ -217,7 +216,6 @@ comprising a full OS as defined by POSIX."
     label badpath8:
         "Jake" "I’ll pay for everything! Don’t worry-"
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
-        return
     
     label goodpath7:
         "Jake" "Let’s split the bill!"
