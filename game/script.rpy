@@ -20,7 +20,7 @@ transform halfSize:
     zoom 0.5
 
 label start:
-    "Jake" "Okay, deep breath. This is going to be fine. It’s just a Computer Science major I matched with on Prowlr™. He’s coming all the way from Long Island to meet me… that’s gotta mean something, right?"
+    "Jake" "Okay, deep breath. This is going to be fine. It’s just a Computer Science major I matched with on Prowlr™. He’s coming all the way from Long Island to meet me... that’s gotta mean something, right?"
     "Jake" "What could possibly go wrong!?"
 
     "(sound of a train approaching)"
