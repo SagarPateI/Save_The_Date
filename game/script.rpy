@@ -10,8 +10,14 @@ default Waiter = Character('Waiter', color="#E03B8B")
 default Narrator = Character('Narrator', color="#E03B8B")
 # The game starts here.
 
-transform half_size: 
+transform background_size: 
     zoom 0.84
+
+transform newSize:
+    zoom 1.5
+
+transform halfSize:
+    zoom 0.5
 
 label start:
     "Jake" "Okay, deep breath. This is going to be fine. It’s just a Computer Science major I matched with on Prowlr™. He’s coming all the way from Long Island to meet me… that’s gotta mean something, right?"
@@ -53,13 +59,13 @@ label start:
         "Jake" "Boy do I love trains. The next train leaves in five minutes! I better get going quick!!"
         "Jake sprints off towards the train station"
         "Jake" "I should probably text him and let him know I’m at the station."
-        scene bg street at half_size
+        scene bg street at background_size
         with fade
         "Jake" "Where is he? I can't see him anywhere!"
         "(Footsteps approaching)"
         "(Your date taps you on your shoulder!)"
         "Jake" "WAHH!? Where did yo- how?"
-        show thomas happy at center
+        show thomas happy
         "Thomas" "Hi (said in a way that only a godlike sexdonis like him can say~)"
         "Jake" "(Quick, say something a CS major could find funny!)"
         "Jake" "How do Linux users greet each other? Hello, Wor–"
@@ -83,12 +89,15 @@ comprising a full OS as defined by POSIX."
     
     label badpath3:
         "Jake" "Erm… I guess I’m just too shy to call the waiter over! uwu"
+        hide thomas happy
+        show thomas dead
         "Thomas" "(Throws up and dies of cringe!)"
     
     label goodpath3:
         "Jake" "Oh waiter!!!"
         hide thomas happy 
         show waiter at center
+        show waiter at halfSize
         "Waiter" "Welcome to generic restaurant, we serve food. What could you possibly want from me?"
     
     menu:
@@ -98,26 +107,74 @@ comprising a full OS as defined by POSIX."
             jump goodpath4
     
     label badpath4:
-        "Jake" "Two burgers with extra penicillin please!"
+        "Jake" "Spaghetti with extra penicillin please!"
         "Waiter" "I'll get that for you right away!"
         hide waiter
         "Narrator" "True to his word, the waiter brings out the penicillin burgers expeditiously and then proceeds to serve the other tables."
-        show thomas happy at center
+        show thomas happy
         "Thomas" "Oh boy! I love penicillin!"
         "Narrator" "Little did Thomas know, he was in for a rude awakening!"
         "Jake" "How's your burger, babes?"
-        show thomas allergy at center
+        show thomas allergy
         "Thomas" "*Choking noises*"
         "Jake" "THOMAS!!! NOOOOOOOO!!!!!"
-        show thomas dead at center
+        show thomas dead
         "Narrator" "Thomas has died due to his previously unknown Penicillin allergy!"
         return
 
     label goodpath4:
         "Jake" "I’ll have one normal burger for me and one sexy burger for my date please. *wink*"
-        show thomas blushing at center
+        hide waiter
+        show thomas blushing
         "Thomas" "Oh my! What a normal and attractive person!"
+        hide thomas blushing
+        show waiter at center
+        show waiter at halfSize
+        "Waiter" "*chuckles* Right away, sir!"
+        hide waiter
+        "Narrator" "The waiter bows and exits stage left just as the burgers appear miraculously on the table. Talk about quality italian service!"
+        "Narrator" "The date between Jake and Thomas seems to be going well! They are talking, laughing and having a great time!"
+        "Narrator" "You've gained relationship points with Thomas!"
+        "Narrator" "Just kidding, we don't have any mechanics like that in this video game!"
+        "Jake" "Those were the greatest burgers I've ever had! I can't believe they came from an italian restaurant!"
+        "Jake" "Though, I have a question... Why did you put mustard on your burger?"
+        show thomas neutral
+        "Thomas" "I just think mustard is the greatest condiment in the world."
+        "Thomas" "It is yellow which implies that you must have great caution when partaking in its delicious compared to the redness of ketchup!"
+        hide thomas neutral 
+        show thomas upset
+        "Thomas" "What, do you take issue with mustard?"
+    menu:
+        "I can't stand mustard!!!":
+            jump badpath5
+
+        "I love mustard too!!!":
+            jump goodpath5
+    
+    label badpath5:
+        "Jake" "Ugh, I can't stand mustard. It's so gross and inferior to horseradish"
+        show thomas angry
+        "Thomas" "What did you just say..."
+        "Jake" "It’s just like the worst condiment ever, I can’t imagine anyone liking it"
+        show thomas angry at newSize
+        "Thomas" "THAT'S THE LAST STRAW!!!"
+        hide thomas angry
+        "Narrator" "And so Thomas jumps across the table and viciously assaults Jake, ending his life instantly before dashing off towards the now vermillion sun"
         return
+
+    label goodpath5:
+        "Jake" "Mustard is pretty good, I like it as an ingredient more than a condiment though."
+        "Thomas" "That’s a fair and valid opinion, I LOVE mustard."
+        "Jake" "It’s so hot that you have passions in life!"
+        return
+
+
+
+
+    
+
+        
+    
         
 
 
