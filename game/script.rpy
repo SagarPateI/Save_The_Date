@@ -7,6 +7,9 @@ default Thomas = Character('Thomas', color="#E03B8B")
 default Protagonist = Character('Protagonist', color="#E03B8B")         
 # The game starts here.
 
+transform half_size: 
+    zoom 0.5  
+
 label start:
     "Protagonist" "Omigod! I have a date with a hottie and I'm so nervous!!! I gotta make sure I say the right things!"
     "Protagonist" "aaa so scared do i run or goooo"
@@ -26,10 +29,9 @@ label start:
         "The protagonist makes their way to (Date Area) and finally meets their date"
 
     label background:
-        scene bg restaurant
+        scene bg street
         with fade
-        show man left at left as man1
-        show man right at right as man2
+        show thomas happy at center
         "Thomas"  "Bla Bla."
         "Protagonist"  "Bla bla."
         

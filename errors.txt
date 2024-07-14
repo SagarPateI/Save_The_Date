@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 113: expected ':' not found.
-    label badpath7
-                  ^
+File "game/script.rpy", line 34: multiple at clauses are prohibited.
+    show thomas happy at half_size at center
+                                     ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Jul 13 18:18:32 2024
+Sat Jul 13 20:56:02 2024
