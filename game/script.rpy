@@ -237,6 +237,7 @@ comprising a full OS as defined by POSIX."
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
     
     label goodpath7:
+        play music peaceful
         "Jake" "Let’s split the bill!"
         show thomas happy
         "Thomas" "Yea, I agree with that! If we had paid this any other way you probably would have died to be honest!"
