@@ -20,7 +20,7 @@ transform halfSize:
     zoom 0.5
 
 label start:
-    play SaveTheDate(slow-1)
+    play music slow1
     "Jake" "Okay, deep breath. This is going to be fine. It’s just a Computer Science major I matched with on Prowlr™. He’s coming all the way from Long Island to meet me... that’s gotta mean something, right?"
     "Jake" "What could possibly go wrong!?"
 
@@ -34,6 +34,8 @@ label start:
             jump badpath1
     
     label badpath1:
+        stop music 
+        play music badend
         "Jake" "Well, I could say the wrong thing... or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GOD I CAN’T DO THIIISSSS!!!!"
         "Narrator" "(Jake’s anxiety builds up, listing out various worries.)"
         "Jake" "I... I just can’t do this... I’m sorry!"
@@ -51,6 +53,8 @@ label start:
             jump badpath2 
 
     label badpath2:
+        stop music 
+        play music badend
         "Jake" "I cannot be late for this - gotta call an Uber. My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
         "UberDriver" "Hop in, buddy! Where to?"
         "Narrator" "Many things could go wrong. Jake would discover this right as the sleeping agent sprinkled onto their seat wore off, allowing them to wake up just in time to watch as their Uber driver harvested their remaining organs. Whoopsies."
@@ -89,6 +93,8 @@ comprising a full OS as defined by POSIX."
             jump badpath3
     
     label badpath3:
+        stop music 
+        play music badend
         "Jake" "Erm... I guess I’m just too shy to call the waiter over! uwu"
         hide thomas happy
         show thomas dead
@@ -110,6 +116,8 @@ comprising a full OS as defined by POSIX."
             jump goodpath4
     
     label badpath4:
+        stop music 
+        play music badend
         "Jake" "Spaghetti with extra penicillin please!"
         "Waiter" "I’ll get that for you right away!"
         hide waiter
@@ -156,6 +164,8 @@ comprising a full OS as defined by POSIX."
             jump goodpath5
     
     label badpath5:
+        stop music 
+        play music badend
         "Jake" "Ugh, I can’t stand mustard. It’s so gross and inferior to horseradish"
         show thomas angry
         "Thomas" "What did you just say..."
@@ -185,6 +195,8 @@ comprising a full OS as defined by POSIX."
             jump badpath6
     
     label badpath6:
+        stop music 
+        play music badend
         "Jake" "Ummm you know that’s bad for you right? It’s also bad table manners to boot-"
         show thomas angry at center
         show thomas angry at newSize
@@ -210,6 +222,8 @@ comprising a full OS as defined by POSIX."
             jump badpath8
     
     label badpath7:
+        stop music
+        play music badend
         show thomas upset
         "Thomas" "Me? Pay for everything? I don’t like that!"
         hide thomas upset
@@ -217,6 +231,8 @@ comprising a full OS as defined by POSIX."
         return
 
     label badpath8:
+        stop music 
+        play music badend
         "Jake" "I’ll pay for everything! Don’t worry-"
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
     
