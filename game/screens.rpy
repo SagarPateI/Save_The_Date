@@ -570,17 +570,17 @@ screen about():
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 
-            ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
-            text "\nCredits:\n"
+            text "Credits:\n"
             text "Team Lead\n - Alex Hernandez\n"
             text "Programming\n - Sagar Patel\n - David Jones\n"
             text "Sound Design\n - Alireza Esna-Ashari\n"
             text "Art\n - Jake Hitchcock\n - Alex Hernandez\n"
+
+             ## gui.about is usually set in options.rpy.
+            if gui.about:
+                text "[gui.about!t]\n"
+
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 style about_label is gui_label
 style about_label_text is gui_label_text
