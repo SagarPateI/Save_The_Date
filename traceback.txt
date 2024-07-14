@@ -5,6 +5,10 @@ While running game code:
     call _load_reload_game from _call__load_reload_game_1
   File "renpy/common/00keymap.rpy", line 531, in script
     python hide:
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 531, in script
+    python hide:
   File "renpy/common/00keymap.rpy", line 531, in <module>
     python hide:
   File "renpy/common/00keymap.rpy", line 542, in _execute_python_hide
@@ -14,6 +18,19 @@ Exception: Couldn't find a place to stop rolling back. Perhaps the script change
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "D:\Programs\renpy\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\Programs\renpy\renpy\main.py", line 637, in main
+    run(restart)
+  File "D:\Programs\renpy\renpy\main.py", line 145, in run
+    renpy.execution.run_context(True)
+  File "D:\Programs\renpy\renpy\execution.py", line 955, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 531, in script
+    python hide:
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
   File "renpy/common/00start.rpy", line 216, in script call
     call _load_reload_game from _call__load_reload_game_1
   File "renpy/common/00keymap.rpy", line 531, in script
@@ -39,4 +56,4 @@ Exception: Couldn't find a place to stop rolling back. Perhaps the script change
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.3.24061702
 SaveTheDate 1.0
-Sun Jul 14 12:47:04 2024
+Sun Jul 14 17:25:12 2024
