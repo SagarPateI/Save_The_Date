@@ -346,7 +346,7 @@ style navigation_button:
     xpadding 10
     ypadding 10
     background Frame("gui/button_normal.png", 10, 10)  # Adjust padding as needed
-    hover_background Frame("gui/button_hover.png", 0, 0)
+    hover_background Frame("gui/button_hover.png", 0, 7)
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:

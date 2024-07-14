@@ -6,5 +6,5 @@ renpy.dissolve renpy.geometry
 renpy.geometry renpy.texture
 renpy.solid
 <<<<<<< Updated upstream
-renpy.texture
 renpy.dissolve renpy.dissolve
+renpy.texture
