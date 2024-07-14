@@ -110,9 +110,10 @@ comprising a full OS as defined by POSIX."
         "Jake" "Spaghetti with extra penicillin please!"
         "Waiter" "I'll get that for you right away!"
         hide waiter
-        "Narrator" "True to his word, the waiter brings out the penicillin burgers expeditiously and then proceeds to serve the other tables."
+        "Narrator" "True to his word, the waiter brings out the penicillin spaghetti expeditiously and then proceeds to serve the other tables."
         show thomas happy
         "Thomas" "Oh boy! I love penicillin!"
+        hide thomas happy
         "Narrator" "Little did Thomas know, he was in for a rude awakening!"
         "Jake" "How's your burger, babes?"
         show thomas allergy
@@ -168,6 +169,7 @@ comprising a full OS as defined by POSIX."
         show thomas happy
         "Thomas" "That’s a fair and valid opinion, I LOVE mustard."
         "Jake" "It’s so hot that you have passions in life!"
+        hide thomas happy
         "Narrator" "You're killing it on this date! The moments continue to fly by and you almost don't even notice the chips just magically phasing into existence on the table"
         "Narrator" "Thomas picks up the chip and just... gets a lil freaky with it! He seems to be licking the salt very slowly off of the chip???"
         "Jake" "(What in the...)"
@@ -181,7 +183,6 @@ comprising a full OS as defined by POSIX."
     
     label badpath6:
         "Jake" "Ummm you know that’s bad for you right? It’s also bad table manners to boot-"
-        hide thomas happy
         show thomas angry at center
         show thomas angry at newSize
         "Narrator" "Vaporizes you instantly into a pile of salt he can consume!"
@@ -189,7 +190,9 @@ comprising a full OS as defined by POSIX."
 
     label goodpath6:
         "Jake" "Omigod you're so sodium-chloride-pilled."
+        show thomas happy
         "Thomas" "(Smirks sexily as he unscrews the top of the shaker, unhinges his python-like jaw and empties the entire container into it.)"
+        hide thomas happy
         "Narrator" "Thomas and Jake finish eating their food and now the decisive hour is finally upon them!"
         "Narrator" "The bill is delivered to their table! What will Jake do?!"
     
@@ -204,7 +207,6 @@ comprising a full OS as defined by POSIX."
             jump badpath8
     
     label badpath7:
-        hide thomas happy
         show thomas upset
         "Thomas" "Me? Pay for everything? I don't like that!"
         hide thomas upset
@@ -213,11 +215,11 @@ comprising a full OS as defined by POSIX."
 
     label badpath8:
         "Jake" "I'll pay for everything! Don't worry-"
-        hide thomas happy
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
     
     label goodpath7:
         "Jake" "Let's split the bill!"
+        show thomas happy
         "Thomas" "Yea, I agree with that! If we had paid this any other way you probably would have died to be honest!"
         hide thomas happy
         show thomas blushing
