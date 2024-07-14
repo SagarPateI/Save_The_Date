@@ -263,5 +263,8 @@ __pycache__/
 # Ignore all files in the game\saves directory
 game/saves/*
 
+# Ignore all files in the game\cache directory
+game/cache/*
+
 # Ignore log.txt file
 log.txt
