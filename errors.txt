@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-The label badpath2 is defined twice, at File "game/script.rpy", line 44:
-    label badpath2:
-and File "game/script.rpy", line 81:
-    label badpath2:
-
-
-The label goodpath2 is defined twice, at File "game/script.rpy", line 50:
-    label goodpath2:
-and File "game/script.rpy", line 85:
-    label goodpath2:
-
+File "game/script.rpy", line 105: show statement expects a non-empty block.
+    show thomas allergy at center:
+                                  ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Jul 13 22:31:22 2024
+Sun Jul 14 10:15:52 2024
