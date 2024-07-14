@@ -164,9 +164,78 @@ comprising a full OS as defined by POSIX."
 
     label goodpath5:
         "Jake" "Mustard is pretty good, I like it as an ingredient more than a condiment though."
+        hide thomas upset
+        show thomas happy
         "Thomas" "That’s a fair and valid opinion, I LOVE mustard."
         "Jake" "It’s so hot that you have passions in life!"
+        "Narrator" "You're killing it on this date! The moments continue to fly by and you almost don't even notice the chips just magically phasing into existence on the table"
+        "Narrator" "Thomas picks up the chip and just... gets a lil freaky with it! He seems to be licking the salt very slowly off of the chip???"
+        "Jake" "(What in the...)"
+    
+    menu:
+        "Aww! That is so adorable!":
+            jump goodpath6
+        
+        "This is so disgusting!":
+            jump badpath6
+    
+    label badpath6:
+        "Jake" "Ummm you know that’s bad for you right? It’s also bad table manners to boot-"
+        hide thomas happy
+        show thomas angry at center
+        show thomas angry at newSize
+        "Narrator" "Vaporizes you instantly into a pile of salt he can consume!"
         return
+
+    label goodpath6:
+        "Jake" "Omigod you're so sodium-chloride-pilled."
+        "Thomas" "(Smirks sexily as he unscrews the top of the shaker, unhinges his python-like jaw and empties the entire container into it.)"
+        "Narrator" "Thomas and Jake finish eating their food and now the decisive hour is finally upon them!"
+        "Narrator" "The bill is delivered to their table! What will Jake do?!"
+    
+    menu:
+        "Make Thomas Pay!":
+            jump badpath7
+        
+        "Split the Bill!":
+            jump goodpath7
+        
+        "Pay the Entire Bill!":
+            jump badpath8
+    
+    label badpath7:
+        hide thomas happy
+        show thomas upset
+        "Thomas" "Me? Pay for everything? I don't like that!"
+        hide thomas upset
+        "Narrator" "Yea, he really didn't like that... Your date is ruined!"
+        return
+
+    label badpath8:
+        "Jake" "I'll pay for everything! Don't worry-"
+        hide thomas happy
+        "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
+    
+    label goodpath7:
+        "Jake" "Let's split the bill!"
+        "Thomas" "Yea, I agree with that! If we had paid this any other way you probably would have died to be honest!"
+        hide thomas happy
+        show thomas blushing
+        "Thomas" "By the way, this date was really enjoyable... Lets do this again sometime!"
+        "Jake" "Woohoo!!!"
+        hide thomas blushing
+        Narrator "And thus the date is successful... The end!"
+        return
+
+
+        
+
+
+    
+
+
+
+
 
 
 

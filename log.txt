@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2024-07-14 17:53:18 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.3.24061702
@@ -11,11 +12,30 @@ Running init code took 0.12s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.06s
+=======
+2024-07-14 18:01:25 UTC
+Windows-10-10.0.22000
+Ren'Py 8.2.3.24061702
+
+Early init took 0.19s
+Loading error handling took 0.07s
+Loading script took 0.42s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.12s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+>>>>>>> Stashed changes
 Index archives took 0.00s
 Dump and make backups took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
+<<<<<<< Updated upstream
 Initial gc took 0.10s
+=======
+Initial gc took 0.07s
+>>>>>>> Stashed changes
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
@@ -68,6 +88,7 @@ Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.01s
 Load screen analysis took 0.00s
+<<<<<<< Updated upstream
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
 Prepare screens took 0.12s
@@ -75,6 +96,15 @@ Save pyanalysis. took 0.02s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Interface start took 0.06s
+=======
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.93s
+>>>>>>> Stashed changes
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -515,5 +545,27 @@ Version: b'4.6.0 NVIDIA 556.12'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1027) drawable=(1920, 1027)
 Maximum texture size: 4096x4096
+<<<<<<< Updated upstream
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1027) drawable=(1920, 1027)
+=======
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.06s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.06s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+>>>>>>> Stashed changes
 Maximum texture size: 4096x4096
