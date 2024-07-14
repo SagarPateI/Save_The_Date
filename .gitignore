@@ -260,8 +260,8 @@ paket-files/
 __pycache__/
 *.pyc
 
-# Ignore saves directory
-./game/saves/*
+# Ignore all files in the game\saves directory
+game/saves/*
 
 # Ignore log.txt file
-.log.txt
+log.txt
