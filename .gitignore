@@ -272,6 +272,9 @@ log.txt
 # Ignore errors.txt file
 errors.txt
 
+# Ignore traceback.txt file
+traceback.txt
+
 game\saves\auto-1-LT1.save
 game\saves\auto-2-LT1.save
 game\saves\auto-3-LT1.save
