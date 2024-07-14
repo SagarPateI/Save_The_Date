@@ -6,6 +6,8 @@
 default Thomas = Character('Thomas', color="#E03B8B")
 default Jake = Character('Protagonist', color="#E03B8B")         
 default UberDriver = Character('Uber Driver', color="#E03B8B")
+default Waiter = Character('Waiter', color="#E03B8B")
+default Narrator = Character('Narrator', color="#E03B8B")
 # The game starts here.
 
 transform half_size: 
@@ -18,10 +20,10 @@ label start:
     "(sound of a train approaching)"
 
     menu:
-        "No running away":
+        "No Running Away":
             jump goodpath1
 
-        "Run away":
+        "Run Away":
             jump badpath1
     
     label badpath1:
@@ -35,7 +37,7 @@ label start:
         "Jake" "Now, should I call an Uber or take the train?"
 
     menu:
-        "Take the train":
+        "Take the Train":
             jump goodpath2
 
         "Call an Uber":
@@ -61,9 +63,9 @@ label start:
         "Thomas" "Hi (said in a way that only a godlike sexdonis like him can say~)"
         "Jake" "(Quick, say something a CS major could find funny!)"
         "Jake" "How do Linux users greet each other? Hello, Wor–"
-        "Thomas" "I'd just like to interject for a moment. What you're referring 
-to as Linux, is in fact, GNU/Linux, or as I've recently taken to calling 
-it, GNU plus Linux. Linux is not an operating system unto itself, but 
+        "Thomas" "I'd just like to interject for a moment. What you're referring to as Linux, is in fact, GNU/Linux, or as I've recently taken to calling 
+it, GNU plus Linux."
+        "Thomas" "Linux is not an operating system unto itself, but 
 rather another free component of a fully functioning GNU system made 
 useful by the GNU corelibs, shell utilities and vital system components 
 comprising a full OS as defined by POSIX."
@@ -71,7 +73,56 @@ comprising a full OS as defined by POSIX."
         "Jake" "(Smooth, Jake... Real smooth.)"
         "Jake and Thomas walks over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the mometnts just fly by, however..."
         "Jake" "(It's been hours and the waiter still has not visited our table! What should I do?!)"
-        return 
+
+    menu:
+        "Call the Waiter":
+            jump goodpath3
+
+        "Don't Call the Waiter":
+            jump badpath3
+    
+    label badpath3:
+        "Jake" "Erm… I guess I’m just too shy to call the waiter over! uwu"
+        "Thomas" "(Throws up and dies of cringe!)"
+    
+    label goodpath3:
+        "Jake" "Oh waiter!!!"
+        hide thomas happy 
+        show waiter at center
+        "Waiter" "Welcome to generic restaurant, we serve food. What could you possibly want from me?"
+    
+    menu:
+        "Let's order spaghetti with extra penicillin!":
+            jump badpath4
+        "We'll order burgers at this fine Itallian establishment!":
+            jump goodpath4
+    
+    label badpath4:
+        "Jake" "Two burgers with extra penicillin please!"
+        "Waiter" "I'll get that for you right away!"
+        hide waiter
+        "Narrator" "True to his word, the waiter brings out the penicillin burgers expeditiously and then proceeds to serve the other tables."
+        show thomas happy at center
+        "Thomas" "Oh boy! I love penicillin!"
+        "Narrator" "Little did Thomas know, he was in for a rude awakening!"
+        "Jake" "How's your burger, babes?"
+        show thomas allergy at center
+        "Thomas" "*Choking noises*"
+        "Jake" "THOMAS!!! NOOOOOOOO!!!!!"
+        show thomas dead at center
+        "Narrator" "Thomas has died due to his previously unknown Penicillin allergy!"
+        return
+
+    label goodpath4:
+        "Jake" "I’ll have one normal burger for me and one sexy burger for my date please. *wink*"
+        show thomas blushing at center
+        "Thomas" "Oh my! What a normal and attractive person!"
+        return
+        
+
+
+
+        
 
         
 
