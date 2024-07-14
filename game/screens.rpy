@@ -576,6 +576,11 @@ screen about():
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
+            text "\nCredits:\n"
+            text "Team Lead\n - Alex Hernandez\n"
+            text "Programming\n - Sagar Patel\n - David Jones\n"
+            text "Sound Design\n - Alireza Esna-Ashari\n"
+            text "Art\n - Jake Hitchcock\n - Alex Hernandez\n"
 
 style about_label is gui_label
 style about_label_text is gui_label_text
