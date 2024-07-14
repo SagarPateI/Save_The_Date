@@ -77,7 +77,7 @@ useful by the GNU corelibs, shell utilities and vital system components
 comprising a full OS as defined by POSIX."
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
         "Jake" "(Smooth, Jake... Real smooth.)"
-        "Jake and Thomas walks over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the mometnts just fly by, however..."
+        "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the mometnts just fly by, however..."
         "Jake" "(It’s been hours and the waiter still has not visited our table! What should I do?!)"
 
     menu:

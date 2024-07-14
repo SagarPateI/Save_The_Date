@@ -142,7 +142,7 @@ style namebox:
     xpos 200
     xanchor gui.name_xalign
     xsize gui.namebox_width
-    ypos -10
+    ypos 0
     ysize gui.namebox_height
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
