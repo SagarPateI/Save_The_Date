@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 34: multiple at clauses are prohibited.
-    show thomas happy at half_size at center
-                                     ^
+The label badpath2 is defined twice, at File "game/script.rpy", line 44:
+    label badpath2:
+and File "game/script.rpy", line 81:
+    label badpath2:
+
+
+The label goodpath2 is defined twice, at File "game/script.rpy", line 50:
+    label goodpath2:
+and File "game/script.rpy", line 85:
+    label goodpath2:
+
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Jul 13 20:56:02 2024
+Sat Jul 13 22:31:22 2024

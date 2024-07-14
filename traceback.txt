@@ -1,24 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 106, in script
-    Zeil "Oh, the basketball team is playing?"
-Exception: Sayer 'Zeil' is not defined.
+  File "game/script.rpy", line 30, in script
+    scene bg street with fadeout
+  File "game/script.rpy", line 30, in <module>
+    scene bg street with fadeout
+NameError: name 'fadeout' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 106, in script
-    Zeil "Oh, the basketball team is playing?"
-  File "C:\Users\David\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
-    Say.execute(self)
-  File "C:\Users\David\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\David\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Zeil' is not defined.
+  File "game/script.rpy", line 30, in script
+    scene bg street with fadeout
+  File "C:\Users\David\Downloads\renpy-8.2.3-sdk\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Users\David\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\David\Downloads\renpy-8.2.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 30, in <module>
+    scene bg street with fadeout
+NameError: name 'fadeout' is not defined
 
 Windows-10-10.0.22000 AMD64
 Ren'Py 8.2.3.24061702
 SaveTheDate 1.0
-Sat Jul 13 18:16:15 2024
+Sat Jul 13 22:05:02 2024
