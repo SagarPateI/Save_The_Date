@@ -293,8 +293,8 @@ screen navigation():
         
         if main_menu:
             #xalign 0.5  # Center horizontally
-            xalign 0.33  # Center horizontally
-            yalign 0.8  # closer to the bottom
+            xalign 0.1  # Center horizontally
+            yalign 0.5  # closer to the bottom
         else:
             xoffset 60
             yalign 0.5
@@ -314,7 +314,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferences") action [SetVariable("preferences_clicked", True), ShowMenu("preferences")]
 
         if _in_replay:
 
@@ -362,7 +362,7 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
+    
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -376,17 +376,16 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     use navigation
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
+    # Comment out or remove these lines to hide game name and version
+    # if gui.show_name:
+    #     vbox:
+    #         style "main_menu_vbox"
+    #
+    #         text "[config.name!t]":
+    #             style "main_menu_title"
+    #
+    #         text "[config.version]":
+    #             style "main_menu_version"
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -395,7 +394,7 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 420
+    xsize 1320
     yfill True
 
     background "gui/overlay/main_menu.png"

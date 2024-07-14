@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 296: keyword argument 'xalign' appears more than once in a vbox statement.
-    xalign 0.33  
-          ^
+File "game/screens.rpy", line 366: 'background_size' is not a keyword argument or valid child of the transform statement.
+    transform background_size: 
+                             ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sun Jul 14 14:49:59 2024
+Sun Jul 14 15:20:20 2024
