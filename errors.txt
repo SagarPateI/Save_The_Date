@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 294: keyword argument 'xalign' is incompatible with 'xpos'.
-    xalign 0.5
-          ^
+File "game/screens.rpy", line 348: style property frame is not known.
+    frame(0.2, 0.2, 0.8, 0.8)
+         ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sun Jul 14 13:19:16 2024
+Sun Jul 14 14:16:46 2024

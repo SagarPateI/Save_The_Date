@@ -290,8 +290,14 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xalign 0.5  # Center horizontally
-        yalign 0.8  # Move closer to the bottom, adjust as needed
+        
+        if main_menu:
+            xalign 0.5  # Center horizontally
+            yalign 0.8  # closer to the bottom
+        else:
+            xoffset 60
+            yalign 0.5
+        
 
         spacing gui.navigation_spacing
 
@@ -338,12 +344,14 @@ style navigation_button:
     size_group "navigation"
     xpadding 10
     ypadding 10
-    background Frame("gui/button_normal.png", 10, 10)  # Adjust the padding as needed
-    hover_background Frame("gui/button_hover.png", 10, 10)
+    background Frame("gui/button_normal.png", 10, 10)  # Adjust padding as needed
+    hover_background Frame("gui/button_hover.png", 0, 0)
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
+    font "gui/RonysiswadiArchitect4-qZmp2.ttf"
+    xalign 0.5
 
 
 ## Main Menu screen ############################################################
