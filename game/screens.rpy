@@ -576,7 +576,7 @@ screen about():
             text "Sound Design\n - Alireza Esna-Ashari\n"
             text "Art\n - Jake Hitchcock\n - Alex Hernandez\n"
 
-             ## gui.about is usually set in options.rpy.
+            ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
