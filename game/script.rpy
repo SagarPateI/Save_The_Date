@@ -126,7 +126,7 @@ comprising a full OS as defined by POSIX."
         "Thomas" "Oh boy! I love penicillin!"
         hide thomas happy
         "Narrator" "Little did Thomas know, he was in for a rude awakening!"
-        "Jake" "How’s your burger, babes?"
+        "Jake" "How’s your spaghetti, babes?"
         show thomas allergy
         "Thomas" "*Choking noises*"
         "Jake" "THOMAS!!! NOOOOOOOO!!!!!"
@@ -235,6 +235,7 @@ comprising a full OS as defined by POSIX."
         play music badend
         "Jake" "I’ll pay for everything! Don’t worry-"
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
+        return
     
     label goodpath7:
         play music peaceful
