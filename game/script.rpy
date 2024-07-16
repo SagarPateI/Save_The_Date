@@ -21,9 +21,9 @@ transform halfSize:
 
 label start:
     play music slow1
-    voice "audio/voicelines/jake/Okay deep breath.m4a"
+    voice "audio/voicelines/jake/Okay deep breath.ogg"
     "Jake" "Okay, deep breath. This is going to be fine. It’s just a Computer Science major I matched with on Prowlr™. He’s coming all the way from Long Island to meet me... that’s gotta mean something, right?"
-    voice "audio/voicelines/jake/What Could Possibly Go Wrong.m4a"
+    voice "audio/voicelines/jake/What Could Possibly Go Wrong.ogg"
     "Jake" "What could possibly go wrong!?"
 
     "(sound of a train approaching)"
@@ -38,17 +38,17 @@ label start:
     label badpath1:
         stop music 
         play music badend
-        voice "audio/voicelines/jake/I can_t do this, run away.m4a"
+        voice "audio/voicelines/jake/I can_t do this, run away.ogg"
         "Jake" "Well, I could say the wrong thing... or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GOD I CAN’T DO THIIISSSS!!!!"
         "Narrator" "(Jake’s anxiety builds up, listing out various worries.)"
-        voice "audio/voicelines/jake/I can_t do this, I_m sorry (run away 2).m4a"
+        voice "audio/voicelines/jake/I can_t do this, I_m sorry (run away 2).ogg"
         "Jake" "I... I just can’t do this... I’m sorry!"
         return
 
     label goodpath1:
-        voice "audio/voicelines/jake/It’s Just a Date.m4a"
+        voice "audio/voicelines/jake/It’s Just a Date.ogg"
         "Jake" "Okay, deep breath. It’ll go fine!! I’m gonna be fine. It’s just a date."
-        voice "audio/voicelines/jake/Should I call and Uber or take the train.m4a"
+        voice "audio/voicelines/jake/Should I call and Uber or take the train.ogg"
         "Jake" "Now, should I call an Uber or take the train?"
 
     menu:
@@ -61,32 +61,32 @@ label start:
     label badpath2:
         stop music 
         play music badend
-        voice "audio/voicelines/jake/Gotta Call an Uber.m4a"
-        voice "audio/voicelines/jake/Low battery (Uber end).m4a"
+        voice "audio/voicelines/jake/Gotta Call an Uber.ogg"
+        voice "audio/voicelines/jake/Low battery (Uber end).ogg"
         "Jake" "I cannot be late for this - gotta call an Uber. My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
         "UberDriver" "Hop in, buddy! Where to?"
         "Narrator" "Many things could go wrong. Jake would discover this right as the sleeping agent sprinkled onto their seat wore off, allowing them to wake up just in time to watch as their Uber driver harvested their remaining organs. Whoopsies."
         return
 
     label goodpath2:
-        voice "audio/voicelines/jake/Boy Do I Love Trains.m4a"
+        voice "audio/voicelines/jake/Boy Do I Love Trains.ogg"
         "Jake" "Boy do I love trains. The next train leaves in five minutes! I better get going quick!!"
         "Narrator" "Jake sprints off towards the train station"
-        voice "audio/voicelines/jake/I should probably text him….m4a"
+        voice "audio/voicelines/jake/I should probably text him….ogg"
         "Jake" "I should probably text him and let him know I’m at the station."
         scene bg street at background_size
         with fade
-        voice "audio/voicelines/jake/Where is he, I can’t see him anywhere.m4a"
+        voice "audio/voicelines/jake/Where is he, I can’t see him anywhere.ogg"
         "Jake" "Where is he? I can’t see him anywhere!"
         "Narrator""(Footsteps approaching)"
         "Narrator" "(Your date taps you on your shoulder!)"
-        voice "audio/voicelines/jake/WOAH, WHERE DID YOU.m4a"
+        voice "audio/voicelines/jake/WOAH, WHERE DID YOU.ogg"
         "Jake" "WAHH!? Where did yo- how?"
         show thomas happy
         "Thomas" "Hi. (said in a way that only a godlike sexdonis like him can say~)"
-        voice "audio/voicelines/jake/Say something a CS major could find funny.m4a"
+        voice "audio/voicelines/jake/Say something a CS major could find funny.ogg"
         "Jake" "(Quick, say something a CS major could find funny!)"
-        voice "audio/voicelines/jake/How do link user say hello.m4a"
+        voice "audio/voicelines/jake/How do link user say hello.ogg"
         "Jake" "How do Linux users greet each other? Hello, Wor–"
         "Thomas" "I’d just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling 
 it, GNU plus Linux."
@@ -94,12 +94,12 @@ it, GNU plus Linux."
 rather another free component of a fully functioning GNU system made 
 useful by the GNU corelibs, shell utilities and vital system components 
 comprising a full OS as defined by POSIX."
-        voice "audio/voicelines/jake/He didn’t get the joke at all!.m4a"
+        voice "audio/voicelines/jake/He didn’t get the joke at all!.ogg"
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
-        voice "audio/voicelines/jake/Smooth Jake.m4a"
+        voice "audio/voicelines/jake/Smooth Jake.ogg"
         "Jake" "(Smooth, Jake... Real smooth.)"
         "Narrator" "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the moments just fly by, however..."
-        voice "audio/voicelines/jake/It’s been hours and the waiter isn’t here.m4a"
+        voice "audio/voicelines/jake/It’s been hours and the waiter isn’t here.ogg"
         "Jake" "(It’s been hours and the waiter still has not visited our table! What should I do?!)"
 
     menu:
@@ -112,7 +112,7 @@ comprising a full OS as defined by POSIX."
     label badpath3:
         stop music 
         play music badend
-        voice "audio/voicelines/jake/Too shy.m4a"
+        voice "audio/voicelines/jake/Too shy.ogg"
         "Jake" "Erm... I guess I’m just too shy to call the waiter over! uwu"
         hide thomas happy
         show thomas dead
@@ -150,14 +150,14 @@ comprising a full OS as defined by POSIX."
         "Jake" "How’s your spaghetti, babes?"
         show thomas allergy
         "Thomas" "*Choking noises*"
-        voice "audio/voicelines/jake/THOMAS NO.m4a"
+        voice "audio/voicelines/jake/THOMAS NO.ogg"
         "Jake" "THOMAS!!! NOOOOOOOO!!!!!"
         show thomas dead
         "Narrator" "Thomas has died due to his previously unknown Penicillin allergy!"
         return
 
     label goodpath4:
-        voice "audio/voicelines/jake/One normal burger for me!.m4a"
+        voice "audio/voicelines/jake/One normal burger for me!.ogg"
         "Jake" "I’ll have one normal burger for me and one sexy burger for my date please. *wink*"
         hide waiter
         show thomas blushing
@@ -174,9 +174,9 @@ comprising a full OS as defined by POSIX."
         show thomas neutral
         "Thomas" "How’s the burger, babes?"
         hide thomas neutral
-        voice "audio/voicelines/jake/Greatest burgers ever.m4a"
+        voice "audio/voicelines/jake/Greatest burgers ever.ogg"
         "Jake" "Those were the greatest burgers I’ve ever had! I can’t believe they came from an italian restaurant!"
-        voice "audio/voicelines/jake/Why did you put mustard on your burger.m4a"
+        voice "audio/voicelines/jake/Why did you put mustard on your burger.ogg"
         "Jake" "Though, I have a question... Why did you put mustard on your burger?"
         show thomas neutral
         "Thomas" "I just think mustard is the greatest condiment in the world."
@@ -198,7 +198,7 @@ comprising a full OS as defined by POSIX."
         "Jake" "Ugh, I can’t stand mustard. It’s so gross and inferior to horseradish"
         show thomas angry
         "Thomas" "What did you just say..."
-        voice "audio/voicelines/jake/It’s like the worst condiment ever.m4a"
+        voice "audio/voicelines/jake/It’s like the worst condiment ever.ogg"
         "Jake" "It’s just like the worst condiment ever, I can’t imagine anyone liking it"
         show thomas angry at newSize
         "Thomas" "THAT’S THE LAST STRAW!!!"
@@ -207,17 +207,17 @@ comprising a full OS as defined by POSIX."
         return
 
     label goodpath5:
-        voice "audio/voicelines/jake/Mustard is pretty good.m4a"
+        voice "audio/voicelines/jake/Mustard is pretty good.ogg"
         "Jake" "Mustard is pretty good, I like it as an ingredient more than a condiment though."
         hide thomas upset
         show thomas happy
         "Thomas" "That’s a fair and valid opinion, I LOVE mustard."
-        voice "audio/voicelines/jake/It’s so hot that you have passions.m4a"
+        voice "audio/voicelines/jake/It’s so hot that you have passions.ogg"
         "Jake" "It’s so hot that you have passions in life!"
         hide thomas happy
         "Narrator" "You’re killing it on this date! The moments continue to fly by and you almost don’t even notice the chips just magically phasing into existence on the table"
         "Narrator" "Thomas picks up the chip and just... gets a lil freaky with it! He seems to be licking the salt very slowly off of the chip???"
-        voice "audio/voicelines/jake/What in the….m4a"
+        voice "audio/voicelines/jake/What in the….ogg"
         "Jake" "(What in the...)"
     
     menu:
@@ -230,7 +230,7 @@ comprising a full OS as defined by POSIX."
     label badpath6:
         stop music 
         play music badend
-        voice "audio/voicelines/jake/You know that’s bad for you right_.m4a"
+        voice "audio/voicelines/jake/You know that’s bad for you right_.ogg"
         "Jake" "Ummm you know that’s bad for you right? It’s also bad table manners to boot-"
         show thomas angry at center
         show thomas angry at newSize
@@ -238,7 +238,7 @@ comprising a full OS as defined by POSIX."
         return
 
     label goodpath6:
-        voice "audio/voicelines/jake/Sodium Chloride Pilled.m4a"
+        voice "audio/voicelines/jake/Sodium Chloride Pilled.ogg"
         "Jake" "Omigod you’re so sodium-chloride-pilled."
         show thomas happy
         "Thomas" "(Smirks sexily as he unscrews the top of the shaker, unhinges his python-like jaw and empties the entire container into it.)"
@@ -268,50 +268,22 @@ comprising a full OS as defined by POSIX."
     label badpath8:
         stop music 
         play music badend
-        voice "audio/voicelines/jake/I’ll pay for everything.m4a"
+        voice "audio/voicelines/jake/I’ll pay for everything.ogg"
         "Jake" "I’ll pay for everything! Don’t worry-"
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
         return
     
     label goodpath7:
         play music peaceful
-        voice "audio/voicelines/jake/Let’s split the bill.m4a"
+        voice "audio/voicelines/jake/Let’s split the bill.ogg"
         "Jake" "Let’s split the bill!"
         show thomas happy
         "Thomas" "Yea, I agree with that! If we had paid this any other way you probably would have died to be honest!"
         hide thomas happy
         show thomas blushing
         "Thomas" "By the way, this date was really enjoyable... Lets do this again sometime!"
-        voice "audio/voicelines/jake/Woohoo.m4a"
+        voice "audio/voicelines/jake/Woohoo.ogg"
         "Jake" "Woohoo!!!"
         hide thomas blushing
         Narrator "And thus the date is successful... The end!"
         return
-
-
-        
-
-
-    
-
-
-
-
-
-
-
-
-    
-
-        
-    
-        
-
-
-
-        
-
-        
-
-
-
