@@ -63,7 +63,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 define config.main_menu_music = "audio/peaceful.mp3"
-
+define config.default_music_volume = 0.7
 
 ## Transitions #################################################################
 ##
