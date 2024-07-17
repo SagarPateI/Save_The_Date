@@ -137,7 +137,7 @@ comprising a full OS as defined by POSIX."
     label badpath4:
         stop music 
         play music badend
-        #voice ""
+        voice "audio/voicelines/jake/Spaghetti-please.ogg"
         "Jake" "Spaghetti with extra penicillin please!"
         "Waiter" "I’ll get that for you right away!"
         hide waiter
