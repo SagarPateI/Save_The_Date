@@ -174,7 +174,7 @@ comprising a full OS as defined by POSIX."
         show thomas neutral
         "Thomas" "How’s the burger, babes?"
         hide thomas neutral
-        voice "audio/voicelines/jake/Greatest burgers ever.ogg"
+        voice "audio/voicelines/jake/Greatest-burgers-ever.ogg"
         "Jake" "Those were the greatest burgers I’ve ever had! I can’t believe they came from an italian restaurant!"
         voice "audio/voicelines/jake/Why did you put mustard on your burger.ogg"
         "Jake" "Though, I have a question... Why did you put mustard on your burger?"
