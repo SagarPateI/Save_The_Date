@@ -71,6 +71,7 @@ label start:
     label goodpath2:
         voice "audio/voicelines/jake/Boy Do I Love Trains.ogg"
         "Jake" "Boy do I love trains. The next train leaves in five minutes! I better get going quick!!"
+        voice "audio/voicelines/narrator/Narrator-Good-Ending-1.ogg"
         "Narrator" "Jake sprints off towards the train station"
         voice "audio/voicelines/jake/I should probably text him….ogg"
         "Jake" "I should probably text him and let him know I’m at the station."
@@ -78,7 +79,9 @@ label start:
         with fade
         voice "audio/voicelines/jake/Where is he, I can’t see him anywhere.ogg"
         "Jake" "Where is he? I can’t see him anywhere!"
-        "Narrator""(Footsteps approaching)"
+        voice "audio/voicelines/narrator/Footsteps-Approaching.ogg"
+        "(Footsteps approaching)"
+        voice "audio/voicelines/narrator/Narr-GE-2.ogg"
         "Narrator" "(Your date taps you on your shoulder!)"
         voice "audio/voicelines/jake/WOAH, WHERE DID YOU.ogg"
         "Jake" "WAHH!? Where did yo- how?"
@@ -98,6 +101,7 @@ comprising a full OS as defined by POSIX."
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
         voice "audio/voicelines/jake/Smooth Jake.ogg"
         "Jake" "(Smooth, Jake... Real smooth.)"
+        voice "audio/voicelines/narrator/Narr-GE-3.ogg"
         "Narrator" "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the moments just fly by, however..."
         voice "audio/voicelines/jake/It’s been hours and the waiter isn’t here.ogg"
         "Jake" "(It’s been hours and the waiter still has not visited our table! What should I do?!)"
@@ -126,6 +130,7 @@ comprising a full OS as defined by POSIX."
         hide thomas happy 
         show waiter at center
         show waiter at halfSize
+        voice "audio/voicelines/waiter/Waiter-GE-1.ogg"
         "Waiter" "Welcome to generic restaurant, we serve food. What could you possibly want from me?"
     
     menu:
@@ -165,11 +170,16 @@ comprising a full OS as defined by POSIX."
         hide thomas blushing
         show waiter at center
         show waiter at halfSize
+        voice "audio/voicelines/waiter/Waiter-GE-2.ogg"
         "Waiter" "*chuckles* Right away, sir!"
         hide waiter
+        voice "audio/voicelines/narrator/Narr-GE-4.ogg"
         "Narrator" "The waiter bows and exits stage left just as the burgers appear miraculously on the table. Talk about quality italian service!"
+        voice "audio/voicelines/narrator/Narr-GE-5.ogg"
         "Narrator" "The date between Jake and Thomas seems to be going well! They are talking, laughing and having a great time!"
+        voice "audio/voicelines/narrator/Narr-GE-6.ogg"
         "Narrator" "You’ve gained relationship points with Thomas!"
+        voice "audio/voicelines/narrator/Narr-GE-7.ogg"
         "Narrator" "Just kidding, we don’t have any mechanics like that in this video game!"
         show thomas neutral
         "Thomas" "How’s the burger, babes?"
@@ -215,7 +225,9 @@ comprising a full OS as defined by POSIX."
         voice "audio/voicelines/jake/It’s so hot that you have passions.ogg"
         "Jake" "It’s so hot that you have passions in life!"
         hide thomas happy
+        voice "audio/voicelines/narrator/Narr-GE-8.ogg"
         "Narrator" "You’re killing it on this date! The moments continue to fly by and you almost don’t even notice the chips just magically phasing into existence on the table"
+        voice "audio/voicelines/narrator/Narr-GE-9.ogg"
         "Narrator" "Thomas picks up the chip and just... gets a lil freaky with it! He seems to be licking the salt very slowly off of the chip???"
         voice "audio/voicelines/jake/What in the….ogg"
         "Jake" "(What in the...)"
@@ -243,7 +255,9 @@ comprising a full OS as defined by POSIX."
         show thomas happy
         "Thomas" "(Smirks sexily as he unscrews the top of the shaker, unhinges his python-like jaw and empties the entire container into it.)"
         hide thomas happy
+        voice "audio/voicelines/narrator/Narr-GE-10.ogg"
         "Narrator" "Thomas and Jake finish eating their food and now the decisive hour is finally upon them!"
+        voice "audio/voicelines/narrator/Narr-GE-11.ogg"
         "Narrator" "The bill is delivered to their table! What will Jake do?!"
     
     menu:
@@ -285,5 +299,6 @@ comprising a full OS as defined by POSIX."
         voice "audio/voicelines/jake/Woohoo.ogg"
         "Jake" "Woohoo!!!"
         hide thomas blushing
-        Narrator "And thus the date is successful... The end!"
+        voice "audio/voicelines/narrator/Narr-GE-12.ogg"
+        "Narrator" "And thus the date is successful... The end!"
         return
