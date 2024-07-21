@@ -91,12 +91,8 @@ label start:
         "Jake" "(Quick, say something a CS major could find funny!)"
         voice "audio/voicelines/jake/How do link user say hello.ogg"
         "Jake" "How do Linux users greet each other? Hello, Wor–"
-        "Thomas" "I’d just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling 
-it, GNU plus Linux."
-        "Thomas" "Linux is not an operating system unto itself, but 
-rather another free component of a fully functioning GNU system made 
-useful by the GNU corelibs, shell utilities and vital system components 
-comprising a full OS as defined by POSIX."
+        "Thomas" "I’d just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling it, GNU plus Linux."
+        "Thomas" "Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX."
         voice "audio/voicelines/jake/He didn’t get the joke at all!.ogg"
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
         voice "audio/voicelines/jake/Smooth Jake.ogg"
