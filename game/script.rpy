@@ -65,7 +65,7 @@ label start:
         voice "audio/voicelines/jake/Gotta Call an Uber.ogg"
         voice "audio/voicelines/jake/Low battery (Uber end).ogg"
         "Jake" "I cannot be late for this - gotta call an Uber. My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
-        voice "audio/voicelines/narrator/Uber-Driver-BE-1.ogg"
+        voice "audio/voicelines/uber-driver/Uber-Driver-BE-1.ogg"
         "UberDriver" "Hop in, buddy! Where to?"
         voice "audio/voicelines/narrator/Narr-BE-2.ogg"
         "Narrator" "Many things could go wrong. Jake would discover this right as the sleeping agent sprinkled onto their seat wore off, allowing them to wake up just in time to watch as their Uber driver harvested their remaining organs. Whoopsies."
