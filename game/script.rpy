@@ -40,7 +40,8 @@ label start:
         play music badend
         voice "audio/voicelines/jake/I can_t do this, run away.ogg"
         "Jake" "Well, I could say the wrong thing... or wear the wrong outfit, or the waiter’ll forget our orders and we’ll starve or a piano could fall on us while we eat and we’ll die - not from the impact BUT FROM THE SHOCK OF A DATE GONE SO HORRIBLY WRONG OH GOD I CAN’T DO THIIISSSS!!!!"
-        "Narrator" "(Jake’s anxiety builds up, listing out various worries.)"
+        voice "audio/voicelines/narrator/Narr-BE-1.ogg"
+        "Narrator" "Jake’s anxiety builds up, listing out various worries."
         voice "audio/voicelines/jake/I can_t do this, I_m sorry (run away 2).ogg"
         "Jake" "I... I just can’t do this... I’m sorry!"
         return
@@ -64,7 +65,9 @@ label start:
         voice "audio/voicelines/jake/Gotta Call an Uber.ogg"
         voice "audio/voicelines/jake/Low battery (Uber end).ogg"
         "Jake" "I cannot be late for this - gotta call an Uber. My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
+        voice "audio/voicelines/narrator/Uber-Driver-BE-1.ogg"
         "UberDriver" "Hop in, buddy! Where to?"
+        voice "audio/voicelines/narrator/Narr-BE-2.ogg"
         "Narrator" "Many things could go wrong. Jake would discover this right as the sleeping agent sprinkled onto their seat wore off, allowing them to wake up just in time to watch as their Uber driver harvested their remaining organs. Whoopsies."
         return
 
@@ -117,6 +120,7 @@ label start:
         hide thomas happy
         show thomas dead
         "Thomas" "(Throws up and dies of cringe!)"
+        voice "audio/voicelines/narrator/Narr-BE-3.ogg"
         "Narrator" "And thus Thomas passes away. The date is over!"
         return
     
@@ -142,10 +146,12 @@ label start:
         "Jake" "Spaghetti with extra penicillin please!"
         "Waiter" "I’ll get that for you right away!"
         hide waiter
+        voice "audio/voicelines/narrator/Narr-BE-4.ogg"
         "Narrator" "True to his word, the waiter brings out the penicillin spaghetti expeditiously and then proceeds to serve the other tables."
         show thomas happy
         "Thomas" "Oh boy! I love penicillin!"
         hide thomas happy
+        voice "audio/voicelines/narrator/Narr-BE-5.ogg"
         "Narrator" "Little did Thomas know, he was in for a rude awakening!"
         #voice ""
         "Jake" "How’s your spaghetti, babes?"
@@ -154,6 +160,7 @@ label start:
         voice "audio/voicelines/jake/THOMAS NO.ogg"
         "Jake" "THOMAS!!! NOOOOOOOO!!!!!"
         show thomas dead
+        voice "audio/voicelines/narrator/Narr-BE-6.ogg"
         "Narrator" "Thomas has died due to his previously unknown Penicillin allergy!"
         return
 
@@ -209,6 +216,7 @@ label start:
         show thomas angry at newSize
         "Thomas" "THAT’S THE LAST STRAW!!!"
         hide thomas angry
+        voice "audio/voicelines/narrator/Narr-BE-7.ogg"
         "Narrator" "And so Thomas jumps across the table and viciously assaults Jake, ending his life instantly before dashing off towards the now vermillion sun"
         return
 
@@ -242,7 +250,8 @@ label start:
         "Jake" "Ummm you know that’s bad for you right? It’s also bad table manners to boot-"
         show thomas angry at center
         show thomas angry at newSize
-        "Narrator" "Vaporizes you instantly into a pile of salt he can consume!"
+        voice "audio/voicelines/narrator/Narr-BE-8.ogg"
+        "Narrator" "*Vaporizes you instantly into a pile of salt he can consume!*"
         return
 
     label goodpath6:
@@ -272,6 +281,7 @@ label start:
         show thomas upset
         "Thomas" "Me? Pay for everything? I don’t like that!"
         hide thomas upset
+        voice "audio/voicelines/narrator/Narr-BE-9.ogg"
         "Narrator" "Yea, he really didn’t like that... Your date is ruined!"
         return
 
@@ -280,6 +290,7 @@ label start:
         play music badend
         voice "audio/voicelines/jake/I’ll pay for everything.ogg"
         "Jake" "I’ll pay for everything! Don’t worry-"
+        voice "audio/voicelines/narrator/Narr-BE-10.ogg"
         "Narrator" "The Mafia snipes Jake before he can finish his sentence! The date is over!"
         return
     
