@@ -1,0 +1,24 @@
+﻿Compressor
+OdB
+Q4dB
+48dB
+Threshold:
+Noise Floor:
+Ratio:
+Attack Time:
+Release Time:
+48dB
+Make-up gain for O dB after compressing
+Manage
+Preview
+Q4dB
+Compress
+0K
+x
+OdB
+-40 dB
+-20 dB
+0.10 secs
+1 .O secs
+based on Peaks
+Cancel
