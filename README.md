@@ -12,12 +12,12 @@
 
 ## Credits 🎨🎵💻
 
-| Role          | Team Members                   |
-|---------------|--------------------------------|
-| Team Lead     | Alex Hernandez                 |
-| Programming   | Sagar Patel, David Jones       |
-| Sound Design  | Alireza Esna-Ashari            |
-| Art           | Jake Hitchcock, Alex Hernandez |
+| Role          | Team Members                     |
+|---------------|----------------------------------|
+| Team Lead     | Alex Hernandez                   |
+| Programming   | Sagar Patel, David Jones         |
+| Sound Design  | Alireza Esna-Ashari, Sagar Patel |
+| Art           | Jake Hitchcock, Alex Hernandez   |
 
 ---
 
