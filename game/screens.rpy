@@ -573,7 +573,7 @@ screen about():
             text "Credits:\n"
             text "Team Lead\n - Alex Hernandez\n"
             text "Programming\n - Sagar Patel\n - David Jones\n"
-            text "Sound Design\n - Alireza Esna-Ashari\n"
+            text "Sound Design\n - Alireza Esna-Ashari\n - Sagar Patel\n"
             text "Art\n - Jake Hitchcock\n - Alex Hernandez\n"
             text "Royalty Free Sound Effects Used\n - \"Tearing Apart a Juicy Lemon.wav\" by CheatinSloth\n - \"NYC ambient subway station and train approach.wav\" by Vortichez\n - \"subway - downtown local 6 announcement.wav\" by taknation\n"
 
