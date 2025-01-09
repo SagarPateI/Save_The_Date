@@ -63,8 +63,10 @@ label start:
         stop music 
         play music badend
         voice "audio/voicelines/jake/Gotta Call an Uber.ogg"
+        voice "audio/voicelines/jake/I cannot be late for this, gotta call an Uber.ogg"
+        "Jake" "I cannot be late for this - gotta call an Uber!"
         voice "audio/voicelines/jake/Low battery (Uber end).ogg"
-        "Jake" "I cannot be late for this - gotta call an Uber. My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
+        "Jake" "My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
         voice "audio/voicelines/uber-driver/Uber-Driver-BE-1.ogg"
         "UberDriver" "Hop in, buddy! Where to?"
         voice "audio/voicelines/narrator/Narr-BE-2.ogg"
@@ -89,12 +91,15 @@ label start:
         voice "audio/voicelines/jake/WOAH, WHERE DID YOU.ogg"
         "Jake" "WAHH!? Where did yo- how?"
         show thomas happy
+        voice "audio/voicelines/thomas/Hi.- (said in a way that only a godlike sexdonis like him can say~).ogg"
         "Thomas" "Hi. (said in a way that only a godlike sexdonis like him can say~)"
         voice "audio/voicelines/jake/Say something a CS major could find funny.ogg"
         "Jake" "(Quick, say something a CS major could find funny!)"
         voice "audio/voicelines/jake/How do link user say hello.ogg"
         "Jake" "How do Linux users greet each other? Hello, Wor–"
+        voice "audio/voicelines/thomas/I’d just like to interject for a moment.ogg"
         "Thomas" "I’d just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling it, GNU plus Linux."
+        voice "audio/voicelines/thomas/Linux is not an operating system unto itself.ogg"
         "Thomas" "Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX."
         voice "audio/voicelines/jake/He didn’t get the joke at all!.ogg"
         "Jake" "(Oh no, he didn’t get the joke at all. What did I get myself into!?)"
@@ -119,13 +124,14 @@ label start:
         "Jake" "Erm... I guess I’m just too shy to call the waiter over! uwu"
         hide thomas happy
         show thomas dead
+        voice "audio/voicelines/thomas/(Throws up and dies of cringe!).ogg"
         "Thomas" "(Throws up and dies of cringe!)"
         voice "audio/voicelines/narrator/Narr-BE-3.ogg"
         "Narrator" "And thus Thomas passes away. The date is over!"
         return
     
     label goodpath3:
-        #voice ""
+        voice "audio/voicelines/jake/Oh, waiter.ogg"
         "Jake" "Oh waiter!!!"
         hide thomas happy 
         show waiter at center
@@ -149,13 +155,15 @@ label start:
         voice "audio/voicelines/narrator/Narr-BE-4.ogg"
         "Narrator" "True to his word, the waiter brings out the penicillin spaghetti expeditiously and then proceeds to serve the other tables."
         show thomas happy
+        voice "audio/voicelines/thomas/Oh boy! I love penicillin.ogg"
         "Thomas" "Oh boy! I love penicillin!"
         hide thomas happy
         voice "audio/voicelines/narrator/Narr-BE-5.ogg"
         "Narrator" "Little did Thomas know, he was in for a rude awakening!"
-        #voice ""
+        voice "audio/voicelines/jake/How's your spaghetti, babes.ogg"
         "Jake" "How’s your spaghetti, babes?"
         show thomas allergy
+        voice "audio/voicelines/thomas/Choking noises.ogg"
         "Thomas" "*Choking noises*"
         voice "audio/voicelines/jake/THOMAS NO.ogg"
         "Jake" "THOMAS!!! NOOOOOOOO!!!!!"
@@ -169,6 +177,7 @@ label start:
         "Jake" "I’ll have one normal burger for me and one sexy burger for my date please. *wink*"
         hide waiter
         show thomas blushing
+        voice "audio/voicelines/thomas/Oh my! What a normal and attractive person.ogg"
         "Thomas" "Oh my! What a normal and attractive person!"
         hide thomas blushing
         show waiter at center
@@ -185,6 +194,7 @@ label start:
         voice "audio/voicelines/narrator/Narr-GE-7.ogg"
         "Narrator" "Just kidding, we don’t have any mechanics like that in this video game!"
         show thomas neutral
+        voice "audio/voicelines/thomas/How’s the burger, babes.ogg"
         "Thomas" "How’s the burger, babes?"
         hide thomas neutral
         voice "audio/voicelines/jake/Greatest-burgers-ever.ogg"
@@ -192,10 +202,12 @@ label start:
         voice "audio/voicelines/jake/Why did you put mustard on your burger.ogg"
         "Jake" "Though, I have a question... Why did you put mustard on your burger?"
         show thomas neutral
+        voice "audio/voicelines/thomas/I just think mustard is the greatest condiment in the world.ogg"
         "Thomas" "I just think mustard is the greatest condiment in the world."
         "Thomas" "It is yellow which implies that you must have great caution when partaking in its deliciousness compared to the redness of ketchup!"
         hide thomas neutral 
         show thomas upset
+        voice "audio/voicelines/thomas/What, do you take issue with mustard.ogg"
         "Thomas" "What, do you take issue with mustard?"
     menu:
         "I can’t stand mustard!!!":
@@ -207,13 +219,15 @@ label start:
     label badpath5:
         stop music 
         play music badend
-        #voice ""
+        voice "audio/voicelines/jake/Ugh, I can’t stand mustard.ogg"
         "Jake" "Ugh, I can’t stand mustard. It’s so gross and inferior to horseradish"
         show thomas angry
+        voice "audio/voicelines/thomas/What did you just say.ogg"
         "Thomas" "What did you just say..."
         voice "audio/voicelines/jake/It’s like the worst condiment ever.ogg"
         "Jake" "It’s just like the worst condiment ever, I can’t imagine anyone liking it"
         show thomas angry at newSize
+        voice "audio/voicelines/thomas/THAT’S THE LAST STRAW.ogg"
         "Thomas" "THAT’S THE LAST STRAW!!!"
         hide thomas angry
         voice "audio/voicelines/narrator/Narr-BE-7.ogg"
@@ -225,6 +239,7 @@ label start:
         "Jake" "Mustard is pretty good, I like it as an ingredient more than a condiment though."
         hide thomas upset
         show thomas happy
+        voice "audio/voicelines/thomas/That’s a fair and valid opinion.ogg"
         "Thomas" "That’s a fair and valid opinion, I LOVE mustard."
         voice "audio/voicelines/jake/It’s so hot that you have passions.ogg"
         "Jake" "It’s so hot that you have passions in life!"
@@ -258,6 +273,7 @@ label start:
         voice "audio/voicelines/jake/Sodium Chloride Pilled.ogg"
         "Jake" "Omigod you’re so sodium-chloride-pilled."
         show thomas happy
+        voice "audio/voicelines/thomas/(Smirks sexily as he unscrews the top of the shaker).ogg"
         "Thomas" "(Smirks sexily as he unscrews the top of the shaker, unhinges his python-like jaw and empties the entire container into it.)"
         hide thomas happy
         voice "audio/voicelines/narrator/Narr-GE-10.ogg"
@@ -279,6 +295,7 @@ label start:
         stop music
         play music badend
         show thomas upset
+        voice "audio/voicelines/thomas/Me- Pay for everything- I don’t like that.ogg"
         "Thomas" "Me? Pay for everything? I don’t like that!"
         hide thomas upset
         voice "audio/voicelines/narrator/Narr-BE-9.ogg"
@@ -299,9 +316,11 @@ label start:
         voice "audio/voicelines/jake/Let’s split the bill.ogg"
         "Jake" "Let’s split the bill!"
         show thomas happy
+        voice "audio/voicelines/thomas/Yea, I agree with that.ogg"
         "Thomas" "Yea, I agree with that! If we had paid this any other way you probably would have died to be honest!"
         hide thomas happy
         show thomas blushing
+        voice "audio/voicelines/thomas/By the way, this date was really enjoyable.ogg"
         "Thomas" "By the way, this date was really enjoyable... Lets do this again sometime!"
         voice "audio/voicelines/jake/Woohoo.ogg"
         "Jake" "Woohoo!!!"
