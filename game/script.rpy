@@ -106,7 +106,7 @@ label start:
         voice "audio/voicelines/jake/Smooth Jake.ogg"
         "Jake" "(Smooth, Jake... Real smooth.)"
         voice "audio/voicelines/narrator/Narr-GE-3.ogg"
-        "Narrator" "Jake and Thomas walk over to a popular (and authentic!) italian restaurant and were seated at a table. They engage in pleasant conversation and the moments just fly by, however..."
+        "Narrator" "Jake and Thomas walk over to a popular (and authentic!) Italian restaurant and were seated at a table. They engage in pleasant conversation and the moments just fly by, however..."
         voice "audio/voicelines/jake/It’s been hours and the waiter isn’t here.ogg"
         "Jake" "(It’s been hours and the waiter still has not visited our table! What should I do?!)"
 
