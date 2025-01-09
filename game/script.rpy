@@ -204,6 +204,7 @@ label start:
         show thomas neutral
         voice "audio/voicelines/thomas/I just think mustard is the greatest condiment in the world.ogg"
         "Thomas" "I just think mustard is the greatest condiment in the world."
+        voice "audio/voicelines/thomas/It is yellow which implies that you must have great caution.ogg"
         "Thomas" "It is yellow which implies that you must have great caution when partaking in its deliciousness compared to the redness of ketchup!"
         hide thomas neutral 
         show thomas upset
