@@ -62,7 +62,6 @@ label start:
     label badpath2:
         stop music 
         play music badend
-        voice "audio/voicelines/jake/Gotta Call an Uber.ogg"
         voice "audio/voicelines/jake/I cannot be late for this, gotta call an Uber.ogg"
         "Jake" "I cannot be late for this - gotta call an Uber!"
         voice "audio/voicelines/jake/Low battery (Uber end).ogg"
