@@ -63,7 +63,7 @@ label start:
         stop music 
         play music badend
         voice "audio/voicelines/jake/Gotta Call an Uber.ogg"
-        voice "audio/I cannot be late for this, gotta call an Uber!.ogg"
+        voice "audio/I cannot be late for this, gotta call an Uber.ogg"
         "Jake" "I cannot be late for this - gotta call an Uber!"
         voice "audio/voicelines/jake/Low battery (Uber end).ogg"
         "Jake" "My battery’s a bit low, so I’ll have to turn off my Life180 location tracker... What could go wrong?"
@@ -127,7 +127,7 @@ label start:
         return
     
     label goodpath3:
-        voice "Oh, waiter!.ogg"
+        voice "Oh, waiter.ogg"
         "Jake" "Oh waiter!!!"
         hide thomas happy 
         show waiter at center
@@ -155,7 +155,7 @@ label start:
         hide thomas happy
         voice "audio/voicelines/narrator/Narr-BE-5.ogg"
         "Narrator" "Little did Thomas know, he was in for a rude awakening!"
-        voice "audio/How's your spaghetti, babes-.ogg"
+        voice "audio/How's your spaghetti, babes.ogg"
         "Jake" "How’s your spaghetti, babes?"
         show thomas allergy
         "Thomas" "*Choking noises*"
@@ -209,7 +209,7 @@ label start:
     label badpath5:
         stop music 
         play music badend
-        voice "Ugh, I can’t stand mustard. It’s so gross and inferior to horseradish.ogg"
+        voice "Ugh, I can’t stand mustard.ogg"
         "Jake" "Ugh, I can’t stand mustard. It’s so gross and inferior to horseradish"
         show thomas angry
         "Thomas" "What did you just say..."
