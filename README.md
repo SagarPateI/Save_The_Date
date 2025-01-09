@@ -42,3 +42,13 @@
     <img src="README/SaveTheDateMMBG.jpg" alt="SaveTheDate" width="800">
   </a>
 </p>
+
+---
+
+## Honorable Mentions
+
+This project includes the use of royalty-free sound effects from [Freesound.org](https://freesound.org), with special thanks to:
+
+- ["Tearing Apart a Juicy Lemon.wav"](https://freesound.org/people/CheatinSloth/sounds/738788/) by [CheatinSloth](https://freesound.org/people/CheatinSloth/)  
+- ["NYC ambient subway station and train approach.wav"](https://freesound.org/people/Vortichez/sounds/335230/) by [Vortichez](https://freesound.org/people/Vortichez/)  
+- ["subway - downtown local 6 announcement.wav"](https://freesound.org/people/taknation/sounds/123904/) by [taknation](https://freesound.org/people/taknation/)
