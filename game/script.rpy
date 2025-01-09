@@ -26,6 +26,7 @@ label start:
     voice "audio/voicelines/jake/What Could Possibly Go Wrong.ogg"
     "Jake" "What could possibly go wrong!?"
 
+    voice "audio/voicelines/narrator/Train-Approaching.ogg"
     "(sound of a train approaching)"
 
     menu:

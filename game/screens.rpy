@@ -575,6 +575,7 @@ screen about():
             text "Programming\n - Sagar Patel\n - David Jones\n"
             text "Sound Design\n - Alireza Esna-Ashari\n"
             text "Art\n - Jake Hitchcock\n - Alex Hernandez\n"
+            text "Royalty Free Sound Effects Used\n - \"Tearing Apart a Juicy Lemon.wav\" by CheatinSloth\n - \"NYC ambient subway station and train approach.wav\" by Vortichez\n - \"subway - downtown local 6 announcement.wav\" by taknation\n"
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
